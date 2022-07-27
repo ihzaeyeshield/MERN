@@ -1,0 +1,29 @@
+.main-page{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container{
+  background-color: tomato;
+  border-radius: 10px; 
+}
+
+.container2{
+    background-color: bisque;
+    display: block;
+    margin: 10px 10px 10px 10px;
+}
+.sign{
+    display: flex;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.text-input {
+    padding: 5px 10px;
+    margin-bottom: 35px;
+}
