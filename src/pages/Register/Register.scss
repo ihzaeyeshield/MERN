@@ -1,14 +1,12 @@
 .main-page{
     display: flex;
-    height: auto;
+    min-height: 100vh;
     justify-content: center;
     align-items: center; 
-    
     background-color: #aeb9b1;
 }
 
 .container{
-  margin-top: 7%;
   background-color: #25333c;
   border-radius: 1px; 
   padding: 30px;
@@ -19,15 +17,17 @@
     display: flex;
 }
 .sign-up{
-    display: block;
+    cursor: pointer;
     background-color: #1ab186;
     width: 50%;
     padding: 3%;
     text-align: center;
     color: white;;
+    border: 0px solid white;
 }
 .log-in{
-    display: block;
+    cursor: pointer;
+    border: 0px solid white;
     background-color: #44535a;
     width: 50%;
     padding: 3%;
@@ -41,66 +41,10 @@
   text-align: center;
   color: white;
 }
-.text-input {
-    padding: 5px 10px;
-    margin-bottom: 20px;
-    background-color: #25333c;
-    border: 1px solid whitesmoke;
-    border-radius: 0px;
-    outline: none;
-    font-size: 14px;
-    height: 25px;
-}
-.text-input,.text-input1:focus{
-    border: 1px solid whitesmoke;
-    border-radius: 0px;
-    color: wheat;   
-}
 
-.text-input1 {
-    padding: 5px 10px;
-    margin-bottom: 20px;
-    background-color: #25333c;
-    border: 1px solid whitesmoke;
-    border-radius: 0px;
-    outline: none;
-    width: 50%;
-    font-size: 14px;
-    height: 25px;
-    color: white;
-}
+
 .divide{
     display: flex;
-    gap: 2%;
+    gap: 1%;
 }
 
-/* CSS */
-.button-16 {
-  background-color: #1ab186;
-  border: 0px solid black;
-  border-radius: 1px;
-  color: white;
-  cursor: pointer;
-  font-family: arial,sans-serif;
-  font-size: 14px;
-  height: 36px;
-  line-height: 27px;
-  min-width: 54px;
-  padding: 0 16px;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: pre;
-}
-
-.button-16:hover {
-  border-color: #dadce0;
-  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
-  color: #202124;
-}
-
-.button-16:focus {
-  border-color: #4285f4;
-  outline: none;
-}

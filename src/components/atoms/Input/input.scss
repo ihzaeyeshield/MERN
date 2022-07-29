@@ -1,0 +1,18 @@
+.text-input{
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    background-color: #25333c;
+    border: 1px solid whitesmoke;
+    border-radius: 0px;
+    outline: none;
+    font-size: 14px;
+    height: 25px;
+    color: white;
+    
+}
+
+.text-input:focus{
+    border: 1px solid whitesmoke;
+    border-radius: 0px;
+    color: wheat;  
+}
