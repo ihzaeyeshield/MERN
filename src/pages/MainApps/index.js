@@ -1,15 +1,16 @@
 import React from 'react'
-import { Routes as Switch, Route,Link, Outlet } from 'react-router-dom'
-
+import { Outlet } from 'react-router-dom'
+import { Header, Footer } from '../../components'
+import './Mainapps.scss'
 
 
 
 const MainApps = () => {
   return (
-    <div>
-        <p>Header</p>
+    <div >
+        <Header/>
         <Outlet/>
-        <p>Footer</p>
+        <Footer/>
     </div>
   )
 }

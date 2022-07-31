@@ -1,0 +1,77 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+@mixin flex($posisi:center) {
+    display: flex;
+    justify-content: $posisi;
+}
+@mixin hover{
+    & :hover{
+        background-color: white;
+    };
+}
+
+nav{
+    @include flex();
+    width: 100%;
+    margin: 0;
+    height: 6vh;
+    padding-top: 4vh;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.tittle{
+    width: 50%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 3em;
+    color: white;
+    
+    img{
+        margin-top: -10px;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+    }
+    b{
+        margin-left: 3em;
+    }
+}
+
+
+.menu{
+    width: 50%;
+    height: 3vh;
+    display: flex;
+    justify-content: right;
+    .menu1{
+        text-decoration: none;
+        color: aliceblue;
+        display: block;
+        margin-right: 10px;
+       
+        
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+        letter-spacing: 1px;
+        margin-right: 2rem;
+        transition: .1s ease;
+        border-width: 0px;
+        border-color: orangered;
+
+        &:hover{
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 3px;
+            border-style: solid;
+            border-color: orangered;
+        }
+    }
+}
+
+
