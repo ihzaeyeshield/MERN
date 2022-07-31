@@ -1,0 +1,62 @@
+$color: red;
+
+@mixin translate($translate) {
+    transform: translateY($translate);
+}
+
+
+.main{
+    background-image: url("../../assets/images/bghome.jpg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    
+    margin-top: -10vh;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    
+}
+
+.blok{
+    display: inline-block;
+    background-color: black;
+    width: 80px;
+    height: 350px;
+}
+
+.blok:nth-child(1){
+    background-color: $color;
+    @include translate(40px)
+}
+
+.blok:nth-child(2){
+    background-color: $color;
+    @include translate(20px)
+}
+.blok:nth-child(3){
+    background-color: $color;
+    @include translate(0px)
+}
+
+.blok:nth-child(4){
+    background-color: $color;
+    @include translate(20px)
+}
+
+.blok:nth-child(5){
+    background-color: $color;
+    @include translate(40px)
+}
+
+.blok:nth-child(6){
+    background-color: $color;
+    @include translate(20px)
+}

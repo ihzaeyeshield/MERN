@@ -1,8 +1,24 @@
 import React from 'react'
+import './Home.scss'
 
 const Home = () => {
   return ( 
-    <div>Home Page</div>
+    <div className='main' >Home Page
+      <div className='container1'>
+        
+        <div className='blok'></div>
+        
+        <div className='blok'></div>
+        
+        <div className='blok'></div>
+        
+        <div className='blok'></div>
+        
+        <div className='blok'></div>
+        
+        <div className='blok'></div>
+      </div>
+    </div>
   )
 }
 
