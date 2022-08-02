@@ -1,5 +1,16 @@
 
 
+.wrapper2{
+    display: flexbox;
+    .button{
+        display: flex;
+        justify-items: right;
+        justify-content: right;
+        padding: 3%;
+    }
+
+}
+
 .container2{
     display: flex;
     gap: 30px;

@@ -7,11 +7,11 @@ import './Mainapps.scss'
 
 const MainApps = () => {
   return (
-    <div >
+        <div className='container-mainapps'>
         <Header/>
         <Outlet/>
         <Footer/>
-    </div>
+        </div>    
   )
 }
 

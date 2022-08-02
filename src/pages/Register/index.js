@@ -6,7 +6,7 @@ import Home from '../Home'
 const Register = () => {
   return (
     <div className='main-page'>
-      <div className='container'>
+      <div className='container-register'>
           <div className='sign'>
             <button className='sign-up'>Sign Up</button>
             <button className='log-in'>Log In</button>

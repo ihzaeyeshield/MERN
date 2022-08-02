@@ -1,7 +1,22 @@
+.container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.wrapper{
+    border: 1px solid black;
+    padding: 1.5em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    background-color: azure;
+    box-shadow: -3px 6px 10px black;
+}
 
-.main{
-    background-image: url("../../assets/images/bghome.jpg");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+.form{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    box-sizing: border-box;
 }

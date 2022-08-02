@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router-dom'
 import { MainApps, Login, Register, Blogpost, Detailpost, Home } from '../../pages'
+import Createblog from '../../pages/Createblog'
 
 
 const Routes = () => {
@@ -11,9 +12,9 @@ const Routes = () => {
             <Route path="/" element={<Home  />}/>
               <Route path="/blogpost" element={<Blogpost  />}/>
               <Route path="/detailpost" element={<Detailpost />}/>
+              <Route path="/createblog" element={<Createblog />}/>
             </Route>
             {/* Penulisan jalur path nested dengan outlet jadi sangat mudah  */}
-
             <Route path='/login' element={<Login />}/>
             <Route path='/register' element={<Register />}/>
 

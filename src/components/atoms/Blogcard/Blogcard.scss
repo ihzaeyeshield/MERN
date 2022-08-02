@@ -1,15 +1,17 @@
-.wrapper{
+.blogcard-wrapper{
     width: 30%;
     background-color: black;
     display: flexbox;
     border-radius: 10px 10px 5px 5px;
+    box-shadow: 5px 5px 4px #aaaa;
 
     img{
         width: 100%;
         border-radius: 10px 10px 0 0;
     }
-    .conten{
+    .blogcard-conten{
         color: white;
         padding: 10px;
     }
+
 }

@@ -4,9 +4,9 @@ import Image from '../../../assets/images/bghome.jpg'
 
 const Blogcard = ({$tittle,$detail}) => {
   return (
-    <div className='wrapper'>
+    <div className='blogcard-wrapper'>
         <img src={Image} />
-        <div className='conten'>
+        <div className='blogcard-conten'>
             <h2>{$tittle}</h2>
             <p>{$detail}</p>
         </div>

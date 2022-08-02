@@ -8,7 +8,7 @@ import Github from '../../../assets/icon/github.png'
 const Footer = () => {
   return (
     <footer>
-            <div className='container'>
+            <div className='container-register'>
                 <div className='container2'>
                     <ul>
                         <li>Footer Content</li>
