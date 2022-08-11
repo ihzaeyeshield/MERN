@@ -1,14 +1,23 @@
 import React from 'react'
 import "../Register/Register.scss"
 import { Buttonregister, Input } from '../../components'
+import {useNavigate} from 'react-router-dom'
 
 
 const Login = () => {
+  
+  let navigate = useNavigate();
+  function handleClick() {
+    navigate("/register");
+  }
+  
   return (
+    
+
     <div className='main-page'>
       <div className='container'>
           <div className='sign'>
-            <button className='sign-up'>Sign Up</button>
+            <button className='sign-up' onClick={handleClick}>Sign Up</button>
             <button className='log-in'>Log In</button>
           </div>
           <div className='form'>

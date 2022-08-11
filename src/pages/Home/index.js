@@ -1,7 +1,9 @@
 import React from 'react'
+
 import './Home.scss'
 
 const Home = () => {
+  
   return ( 
     <div className='main' >Home Page
       <div className='container1'>

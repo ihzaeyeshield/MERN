@@ -1,14 +1,16 @@
 import React from 'react'
 import './Blogcard.scss'
-import Image from '../../../assets/images/bghome.jpg'
 
-const Blogcard = ({$tittle,$detail}) => {
+const Blogcard = (props) => {
+  const {image, tittle, name, date, body} = props
   return (
     <div className='blogcard-wrapper'>
-        <img src={Image} />
+        <img src={image} alt='' />
         <div className='blogcard-conten'>
-            <h2>{$tittle}</h2>
-            <p>{$detail}</p>
+            <h2>{tittle}</h2>
+            <p>{name}</p>
+            <p>{date}</p>
+            <p>{body}</p>
         </div>
     </div>
   )
