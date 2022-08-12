@@ -1,14 +1,6 @@
-
 import {legacy_createStore as createStore } from "redux";
-
-const initialState={
-    dataBlog:[],
-    name:'ihza'
-}
-
-const reducer = (state = initialState, action)=>{
-    return state;
-}
+import reducer from './reducer/reducer'
+//reducer di import 
 
 const store = createStore(reducer)
 
