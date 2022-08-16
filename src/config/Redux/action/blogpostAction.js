@@ -18,3 +18,6 @@ export const setDataBlog =()=>{
         })
     }
 }
+
+//Apa itu JavaScript asinkron?
+//Pemrograman asinkron adalah teknik yang memungkinkan program Anda untuk memulai tugas yang berpotensi berjalan lama dan masih dapat responsif terhadap peristiwa lain saat tugas itu berjalan, daripada harus menunggu sampai tugas itu selesai
