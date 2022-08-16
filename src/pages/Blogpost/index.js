@@ -3,9 +3,9 @@ import Blogcard from '../../components/atoms/Blogcard'
 import './Blogpost.scss'
 import { Buttonregister } from '../../components/atoms'
 import {useNavigate} from 'react-router-dom'
-import axios from 'axios'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux/es/exports'
+import { setDataBlog } from '../../config/Redux/action'
 
 
 const Blogpost = () => {
@@ -22,7 +22,6 @@ const Blogpost = () => {
   //ini state local
   
   const {dataBlogGlobal} = useSelector(state => state.blogPostReducer);
-
   const {name} = useSelector(state=>state.globalReducer)
   //ini state Global <useSelector> Allows you to extract data from the Redux store state, using a selector function.
   const dispatch = useDispatch();
@@ -33,22 +32,10 @@ const Blogpost = () => {
     setTimeout(()=>{
       dispatch({type:'UPDATE_NAME'})
     },3000)
-    //tes fungsi timeout dan mengambil nilai dari store redux
+    //tes fungsi timeout dan mengambil nilai dari store redux (caba coba ini)
 
-    axios.get('http://localhost:4000/v1/blog/post')
-    .then(resulta=>{
-      //resulta bukan fungsi, tapi parameter saja, setelah get dari API
-      console.log('data API : ',resulta.data);
-      const responseAPI = resulta.data;
-
-      // setDataBlog(responseAPI.data);
-      dispatch({type:'UPDATE_DATA_BLOG',payload: responseAPI.data})
-      //dispatch=menugaskan sepeti menge get dari stateGlobal
-      
-    })
-    .catch(err=>{
-      console.log('error : ',err)
-    })
+    dispatch(setDataBlog())
+    //setDataBlog diambil dari folder action folder di redux
   }, [dispatch])
 // The useEffect Hook allows you to perform side effects in your components. 
 // Some examples of side effects are: fetching data, directly updating the DOM, and timers. 
